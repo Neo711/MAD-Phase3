@@ -1,0 +1,57 @@
+h1
+{
+    text-align: center;
+}
+
+input[type=text]
+{
+    width: 315px;
+    height: 25px;
+    border-radius: 5px;
+    border: 0px;
+    background-color: #333333;
+    color: #d9d9d9;
+    padding: 0 5px 0 5px;
+}
+
+.calc-upright
+{
+    width: 25%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.calc-sideways
+{
+    width: 40%;
+    height: 100%;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.button
+{
+    margin: 3px;
+    width: 63px;
+    border: 1px solid #ccc;
+    height: 25px;
+    border-radius: 4px;
+    color: #000000;
+    cursor: pointer;
+}
+
+.clear-button
+{
+    margin: 3px;
+    width: 138px;
+    border: 1px solid #ccc;
+    height: 25px;
+    border-radius: 4px;
+    color: #000000;
+    cursor: pointer;
+}
