@@ -1,0 +1,28 @@
+body { 
+    background-color: #4F4F4F;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+button.converterButton {
+    background-color: #D9D9D9;
+    color: grey;
+    padding: 5px;
+    text-align: center;
+    font-size: 12px;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+button.Accent {
+    background-color: #EBAC4E;
+}
+
+converterButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
