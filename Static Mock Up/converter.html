@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="ConverterStyles.css">
-
         <title>Unit Converter</title>
     </head>
     <body>
@@ -28,7 +27,7 @@
                                 <option value="0">Select a Measurement</option>
                             </select>
                         </div>
-                        <p class="converterNumericalValues">00.000</p>
+                        <p id="input" class="converterNumericalValues">00.000</p>
                     </div>
 
                     <div title="input" class="converterScreen">
@@ -49,30 +48,36 @@
                     <button title="Converter" class="converterNavigation">Converter</button>
                 </div>
                 <div title="row2" class="converterButtonRow">
-                    <button title="7" class="converterNumber">7</button>
-                    <button title="8" class="converterNumber">8</button>
-                    <button title="9" class="converterNumber">9</button>
+                    <button id="7" title="7" class="converterNumber" onclick="handleClick(7)">7</button>
+                    <button id="8" title="8" class="converterNumber" onclick="handleClick(8)">8</button>
+                    <button id="9" title="9" class="converterNumber" onclick="handleClick(9)">9</button>
                     <button title="Undo" class="converterAccent">Undo</button>
                 </div>
                 <div title="row3" class="converterButtonRow">
-                    <button title="4" class="converterNumber">4</button>
-                    <button title="5" class="converterNumber">5</button>
-                    <button title="6" class="converterNumber">6</button>
+                    <button id="4" title="4" class="converterNumber" onclick="handleClick(4)">4</button>
+                    <button id="5" title="5" class="converterNumber" onclick="handleClick(5)">5</button>
+                    <button id="6" title="6" class="converterNumber" onclick="handleClick(6)">6</button>
                     <button title="Del" class="converterAccent">Del</button>
                 </div>
                 <div title="row4" class="converterButtonRow">
-                    <button title="1" class="converterNumber"">1</button>
-                    <button title="2" class="converterNumber">2</button>
-                    <button title="3" class="converterNumber">3</button>
+                    <button id="1" title="1" class="converterNumber" onclick="handleClick(1)">1</button>
+                    <button id="2" title="2" class="converterNumber" onclick="handleClick(2)">2</button>
+                    <button id="3" title="3" class="converterNumber" onclick="handleClick(3)">3</button>
                     <button title="C" class="converterAccent">C</button>
                 </div>
                 <div title="row5" class="converterButtonRow">
-                    <button title="+/-" class="converterNumber">+/-</button>
-                    <button title="0" class="converterNumber">0</button>
+                    <button id="+/-" title="+/-" class="converterNumber">+/-</button>
+                    <button id="0" title="0" class="converterNumber" onclick="handleClick(0)">0</button>
                     <button title="." class="converterNumber">.</button>
                     <button title="=" class="converterAccent">=</button>
                 </div>                
             </div>
         </main>
     </body>
+    <script>
+        function handleClick(number) {
+            var input = document.getElementById(number).value;
+            document.getElementById("input").value = document.getElementById("input").value + number;
+        }
+    </script>
 </html>
