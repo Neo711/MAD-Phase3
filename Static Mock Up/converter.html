@@ -3,14 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="ConverterStyles.css">
 
         <title>Unit Converter</title>
     </head>
     <body>
         <main>
-            <div title="inputOutput">
-                <select title="conversionCategory">
+            <div title="inputOutput" class="conversionInputOutput">
+                <select title="conversionCategory" class="converterCategory" >
                     <option value="0">Select a Conversion Category</option>
                     <option value="1">Area</option>
                     <option value="2">Length</option>
@@ -22,54 +22,55 @@
                     <option value="8">Time</option>
                 </select>
                 <div title="screen">
-                    <div title="input">
-                        <select title="inputMeasurement">
-                            <option value="0">Select a Measurement</option>
-                        </select>
-                        <p>
-                            00.000
-                        </p>
+                    <div title="input" class="converterScreen">
+                        <div class="converterScreenRow">
+                            <select title="outputMeasurement" class="converterScreenSelect">
+                                <option value="0">Select a Measurement</option>
+                            </select>
+                        </div>
+                        <p class="converterNumericalValues">00.000</p>
                     </div>
-                    <div title="output">
-                        <select title="outputMeasurement">
-                            <option value="0">Select a Measurement</option>
-                        </select>
-                        <p>
-                            00.000
-                        </p>
+
+                    <div title="input" class="converterScreen">
+                        <div class="converterScreenRow">
+                            <select title="outputMeasurement" class="converterScreenSelect">
+                                <option value="0">Select a Measurement</option>
+                            </select>
+                        </div>
+                        <p class="converterNumericalValues">00.000</p>
                     </div>
                 </div>
             </div>
             <div title="buttons" class="converterButtons">
-                <div title="row1" class="buttonRow">
-                    <button title="Simple" class="converterButton">Simple</button>
-                    <button title="Scientific" class="converterButton">Scientific</button>
-                    <button title="Graphing" class="converterButton">Graphing</button>
-                    <button title="Converter" class="converterButton">Converter</button>
+                <div title="row1" class="converterButtonRow">
+                    <button title="Simple" class="converterNavigation">Simple</button>
+                    <button title="Scientific" class="converterNavigation">Scientific</button>
+                    <button title="Graphing" class="converterNavigation">Graphing</button>
+                    <button title="Converter" class="converterNavigation">Converter</button>
                 </div>
-                <div title="row2">
-                    <button title="7" class="converterButton">7</button>
-                    <button title="8" class="converterButton">8</button>
-                    <button title="9" class="converterButton">9</button>
-                    <button title="Undo" class="converterButton Accent">Undo</button>
+                <div title="row2" class="converterButtonRow">
+                    <button title="7" class="converterNumber">7</button>
+                    <button title="8" class="converterNumber">8</button>
+                    <button title="9" class="converterNumber">9</button>
+                    <button title="Undo" class="converterAccent">Undo</button>
                 </div>
-                <div title="row3">
-                    <button title="4" class="converterButton">4</button>
-                    <button title="5" class="converterButton">5</button>
-                    <button title="6" class="converterButton">6</button>
-                    <button title="Del" class="converterButton Accent">Del</button>
+                <div title="row3" class="converterButtonRow">
+                    <button title="4" class="converterNumber">4</button>
+                    <button title="5" class="converterNumber">5</button>
+                    <button title="6" class="converterNumber">6</button>
+                    <button title="Del" class="converterAccent">Del</button>
                 </div>
-                <div title="row4">
-                    <button title="1" class="converterButton">1</button>
-                    <button title="2" class="converterButton">2</button>
-                    <button title="3" class="converterButton">3</button>
-                    <button title="C" class="converterButton Accent">C</button>
+                <div title="row4" class="converterButtonRow">
+                    <button title="1" class="converterNumber"">1</button>
+                    <button title="2" class="converterNumber">2</button>
+                    <button title="3" class="converterNumber">3</button>
+                    <button title="C" class="converterAccent">C</button>
                 </div>
-                <div title="row5">
-                    <button title="+/-" class="converterButton">+/-</button>
-                    <button title="0" class="converterButton">0</button>
-                    <button title="." class="converterButton">.</button>
-                    <button title="=" class="converterButton Accent">=</button>
+                <div title="row5" class="converterButtonRow">
+                    <button title="+/-" class="converterNumber">+/-</button>
+                    <button title="0" class="converterNumber">0</button>
+                    <button title="." class="converterNumber">.</button>
+                    <button title="=" class="converterAccent">=</button>
                 </div>                
             </div>
         </main>

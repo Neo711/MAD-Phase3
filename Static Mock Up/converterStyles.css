@@ -1,28 +1,107 @@
 body { 
     background-color: #4F4F4F;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'PT-Sans', sans-serif;
     color: white;
 }
 
-button.converterButton {
+.conversionInputOutput {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.converterCategory {
+    width: 90%;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #EBAC4E;
+    color: rgb(76, 76, 76);
+    padding: 5px;
+    border-radius: 8%;
+}
+
+.converterScreen {
+    display: flex;
+    flex-direction: column  ;
+    background-color: #777777;
+    border: 2px black solid;
+    width: auto;
+    height: 140px;
+    margin: 10px;
+    border-radius: 8%;
+}
+
+.converterScreenRow {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+}
+
+.converterScreenSelect {
+    background-color: #EBAC4E;
+    color: rgb(76, 76, 76);
+    height: fit-content;
+    border-radius: 10%;
+    margin: 5px;
+    padding: 2px 0px;
+}
+
+.converterNumericalValues {
+    font-size: 60px;
+    text-align:right;
+    width: auto;
+    height: max;
+    margin: 15px;
+}
+
+.converterNumber {
     background-color: #D9D9D9;
-    color: grey;
+    color: dimgray;
     padding: 5px;
     text-align: center;
-    font-size: 12px;
+    font-size: 40px;
+    font-weight: bold;
     border-radius: 50%;
-    width: 70px;
-    height: 70px;
+    width: 80px;
+    height: 80px;
 }
 
-button.Accent {
+button.converterAccent {
     background-color: #EBAC4E;
+    font-size: 24px;
+    color: dimgray;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
 }
 
-converterButtons {
+.converterNavigation {
+    background-color: #D9D9D9;
+    color: dimgray;
+    padding: 5px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.converterButtons {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.converterButtonRow {
+    display: flex;
+    margin: 5px 2.5px;
+    width: 100%;
+    justify-content: space-between;
 }
