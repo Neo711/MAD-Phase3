@@ -42,9 +42,9 @@
             </div>
             <div title="buttons" class="converterButtons">
                 <div title="row1" class="converterButtonRow">
-                    <button title="Simple" class="converterNavigation">Simple</button>
-                    <button title="Scientific" class="converterNavigation">Scientific</button>
-                    <button title="Graphing" class="converterNavigation">Graphing</button>
+                    <button title="Simple" class="converterNavigation"onclick="redirectToSimple()">Simple</button>
+                    <button title="Scientific" class="converterNavigation"onclick="redirectToScientificPage()">Scientific</button>
+                    <button title="Graphing" class="converterNavigation"onclick="redirectToGraphing()">Graphing</button>
                     <button title="Converter" class="converterNavigation">Converter</button>
                 </div>
                 <div title="row2" class="converterButtonRow">
@@ -75,6 +75,22 @@
         </main>
     </body>
     <script>
+
+function redirectToSimple() {
+  window.location.href = 'index.html'; 
+}
+
+
+function redirectToScientificPage() {
+  window.location.href = 'ScientificCalculator.html'; 
+}
+
+
+
+function redirectToGraphing() {
+  window.location.href = 'graphing.html'; 
+}
+        
         function handleClick(number) {
             var input = document.getElementById(number).value;
             document.getElementById("input").value = document.getElementById("input").value + number;

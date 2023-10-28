@@ -17,6 +17,9 @@
         <input type = "text" id="display" disabled>
         <button class="button" > Clear </button>
         <div class = "calc-buttons-upright">
+            <button onclick="redirectToConverter()">Converter</button>
+            <button onclick="redirectToGraphing()">Graphing</button>
+            <button onclick="redirectToSimple()">Simple</button>
             <button class="button" > sin </button>
             <button class="button" > cos </button>
             <button class="button" > tan </button>
@@ -122,5 +125,22 @@
         </div>
     </div>
 </body>
+
+<script>
+
+    function redirectToSimple() {
+      window.location.href = 'index.html'; 
+    }
+    
+    
+    function redirectToGraphing() {
+  window.location.href = 'graphing.html'; 
+}
+
+function redirectToConverter() {
+  window.location.href = 'converter.html'; 
+}
+
+</script>
 
 </html>

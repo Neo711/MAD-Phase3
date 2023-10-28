@@ -13,10 +13,10 @@
   <div class="calculator">
     <div class="screen" id="screen">0</div>
     <div class="navbar">
-      <button>Home</button>
-      <button>History</button>
-      <button>Settings</button>
-      <button>About</button>
+      <button>Simple</button>
+      <button onclick="redirectToScientificPage()">Scientific</button>
+      <button onclick="redirectToGraphing()">Graphing</button>
+      <button onclick="redirectToConverter()">Converter</button>
     </div>
     <div class="buttons">
       <div class="button" onclick="pressButton('C')">C</div>
@@ -45,6 +45,19 @@
     let operator = null;
     let previousInput = null;
     
+    function redirectToScientificPage() {
+  window.location.href = 'ScientificCalculator.html'; 
+}
+
+function redirectToGraphing() {
+  window.location.href = 'graphing.html'; 
+}
+
+function redirectToConverter() {
+  window.location.href = 'converter.html'; 
+}
+
+
     function pressButton(value) {
       if ('0123456789'.includes(value)) {
         if (currentInput === '0') {
