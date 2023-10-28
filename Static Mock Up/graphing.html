@@ -21,10 +21,10 @@
                 <div class="button">Graph</div>
             </div>
             <div class="middle-row">
-                <div class="button">Simple</div>
-                <div class="button">Scientific</div>
-                <div class="button">Graphing</div>
-                <div class="button">Converter</div>
+                <button title="Simple" class="converterNavigation"onclick="redirectToSimple()">Simple</button>
+                <button title="Scientific" class="converterNavigation"onclick="redirectToScientificPage()">Scientific</button>
+                <button>Graphing</button>
+                <button onclick="redirectToConverter()">Converter</button>
             </div>
 
             <div class="bottom-left">
@@ -58,6 +58,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        function redirectToSimple() {
+  window.location.href = 'index.html'; 
+}
+
+function redirectToConverter() {
+  window.location.href = 'converter.html'; 
+}
+
+
+
+function redirectToScientificPage() {
+  window.location.href = 'ScientificCalculator.html'; 
+}
+    </script>
 </body>
 
 </html>
