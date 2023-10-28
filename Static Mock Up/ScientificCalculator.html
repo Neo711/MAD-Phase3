@@ -14,12 +14,12 @@
     <h1 class = "title">Scientific Calculator</h1>
     <div class = "calc-upright">
         <h2>Calculator in Portrait Mode</h2>
-        <input type = "text" id="display" disabled>
+        <input type = "text" id="display">
         <button class="button" > Clear </button>
         <div class = "calc-buttons-upright">
             <button onclick="redirectToConverter()">Converter</button>
             <button onclick="redirectToGraphing()">Graphing</button>
-            <button onclick="redirectToSimple()">Simple</button>
+            <button onclick="redirectToSimple()">Simple</button><br>
             <button class="button" > sin </button>
             <button class="button" > cos </button>
             <button class="button" > tan </button>
@@ -72,7 +72,10 @@
     <div class = "calc-sideways">
         <h2>Calculator in Landscape Mode</h2>
         <input type = "text" id="display" disabled>
-        <button class="clear-button" > Clear </button>
+        <button class="clear-button" > Clear </button><br>
+        <button onclick="redirectToConverter()">Converter</button>
+            <button onclick="redirectToGraphing()">Graphing</button>
+            <button onclick="redirectToSimple()">Simple</button><br>
         <div class = "calc-buttons-sideways">
             <button class="button" > sin </button>
             <button class="button" > cos </button>
@@ -124,7 +127,7 @@
             <button class="button" > = </button><br>
         </div>
     </div>
-</body>
+
 
 <script>
 
@@ -142,5 +145,5 @@ function redirectToConverter() {
 }
 
 </script>
-
+</body>
 </html>
